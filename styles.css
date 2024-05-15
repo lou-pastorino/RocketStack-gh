@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --button-color: #acc8e5;
+  --button-text-color: #112a46;
+  --primary-brand: #aee6ac;
+  --primary-brand-text: #1b1145;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.hero {
+  /* background-image: url(assets/rocket-launch2.jpeg); */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* max-width: 75%; */
+}
+
+.hero-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.button-container {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 1rem;
+  max-width: 200px;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}
+
+@media screen and (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-container button {
+    max-width: 250px;
+  }
+}
+
+.button-container button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.text-body-secondary {
+  font-weight: lighter;
+}
+
+.navbar {
+  box-shadow: 0 4px 5px -5px gray;
+  background-color: var(--primary-brand) !important;
+}
+
+nav a {
+  color: var(--primary-brand-text) !important;
+}
+
+.navbar-brand img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.hero-btn {
+  border: 1px lightgrey solid;
+}
+
+.hero-btn:hover {
+  background-color: #ffb703;
+  color: rgb(0, 0, 0);
+}
+
+.portfolio-heading {
+  padding-bottom: 4rem;
+}
+
+.logo-container {
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 5px -5px 5px grey; */
+}
+
+.carousel {
+  background-color: none;
+  color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--button-text-color); /* Change this to your desired color */
+}
+
+.tier-column {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.popular {
+  background-color: var(--primary-brand);
+  border-radius: 0.5rem;
+}
+
+.popular-badge {
+  background-color: #aee6ac;
+  color: #1b1145;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.plan {
+  margin: 1rem 0;
+  font-weight: lighter;
+}
+
+.divider {
+  height: 0.5px;
+  width: 75%;
+  background-color: lightgray;
+  margin: 2rem;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.price-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.feature {
+  display: flex;
+  /* width: 75%; */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.features {
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  padding-right: 0.5rem;
+  padding-bottom: 15px;
+}
+
+.excl {
+  text-decoration: line-through;
+}
+
+.price {
+  display: flex;
+  font-size: 2rem;
+}
+
+.gbp {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-right: 0.2rem;
+}
+
+.pm {
+  font-size: 1rem;
+  align-self: flex-end;
+  margin-bottom: 0.25rem;
+}
+.price-cta {
+  font-weight: bold;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}
+
+.price-cta:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  margin-bottom: 1rem;
+}
+
+.contact-us-btn {
+  border: none;
+  background-color: var(--button-color);
+  margin-top: 1rem;
+  color: var(--button-text-color);
+}
+
+.contact-us-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer {
+  border-top: 0.5px solid lightgray;
+}
+
+.badge {
+  color: black;
+}
+
+button {
+  margin-bottom: 2rem;
+  width: 100%;
+  border: lightgray 1px solid;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+.about:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer {
+  background-color: var(--primary-brand);
+  color: var(--primary-brand-text);
+}
