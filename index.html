@@ -272,7 +272,7 @@
                 <p class="excl">Handover and aftercare</p>
               </div>
             </div>
-            <button class="price-cta">Learn More</button>
+            <button class="price-cta" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
           </div>
         </div>
         <!-- Column 2 -->
@@ -303,7 +303,7 @@
                 <p class="excl">Handover and aftercare<</p>
               </div>
             </div>
-            <button class="price-cta">Learn More</button>
+            <button class="price-cta" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
             <div class="popular-badge">Most Popular</div>
           </div>
         </div>
@@ -336,7 +336,7 @@
                 <p>Handover and aftercare</p>
               </div>
             </div>
-            <button class="price-cta">Learn More</button>
+            <button class="price-cta" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
           </div>
         </div>
       </div>
@@ -476,22 +476,22 @@
           </div>
           <!-- Modal pop up -->
           <!-- Button trigger modal -->
-          <button type="button" class="contact-us-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn1">
+          <button type="button" class="contact-us-btn" data-bs-toggle="modal" data-bs-target="#contactModal" id="btn1">
             Submit <i class="bi bi-arrow-right-circle"></i>
           </button>
 
           <!-- Modal -->
           <div
             class="modal fade"
-            id="exampleModal"
+            id="contactModal"
             tabindex="-1"
-            aria-labelledby="exampleModalLabel"
+            aria-labelledby="contactModalLabel"
             aria-hidden="true"
           >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Form Submitted Successfully</h1>
+                  <h1 class="modal-title fs-5" id="contactLabel">Form Submitgted Successfully</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="output">
@@ -506,6 +506,26 @@
         </form>
       </div>
     </section>
+
+    <!-- Modal Pricing-->
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Learn more</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Lots of pricing informations!</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
 
